@@ -17,7 +17,8 @@ import unittest
 
 def capital_dict(d1):
   str_lst = []
-  # write your code here
+  for i in d1.keys():
+    str_lst.append("{} -> {}".format(i,d1[i]))
 
   return str_lst
 
