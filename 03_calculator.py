@@ -26,7 +26,17 @@ import unittest
 
 def calculator(expression):
   ans = 0
-  # write your code here
+  for i in expression:
+    if not i.isdigit():
+      expression=expression.split(i)
+    if i=="+":
+      ans=int(expression[0])+int(expression[1])
+    elif i=="-":
+      ans=int(expression[0])-int(expression[1])
+    elif i=="*":
+      ans=int(expression[0])*int(expression[1])
+    elif i=="/":
+      ans=int(expression[0])/int(expression[1])
 
   return ans
 
