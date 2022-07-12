@@ -26,7 +26,11 @@ import unittest
 
 def add_maxdigit(nums):
   ans = []
-  # write your code here
+  M=max(nums)
+  n=len(str(M))
+  for i in nums:
+      if len(str(i))==n:
+          ans.append(i)
   
   return sum(ans)
 
