@@ -19,7 +19,9 @@ import unittest
 
 def concatinate_dictionaries(d1,d2):
   cse_dict = {}
-  # write your code here
+  d1.update(d2)
+  d1.update(d3)
+  cse_dict.update(d1)
 
   return cse_dict
 
